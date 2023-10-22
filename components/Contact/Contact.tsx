@@ -27,7 +27,8 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true);
         console.log("hell0");
-        console.log("hello:", process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE)
+        const emailJsService = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE as string;
+        const emailJSTemplate = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE as string;
 
         emailjs.send(
             emailJsService,
@@ -55,12 +56,10 @@ const Contact = () => {
             });
 
     }
-    const handleChange = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setForm({ ...form, [name]: value });
-        console.log(form)
-
-
+        console.log(form);
     }
     return (
         <div id="Contact" className='contactPage'>
