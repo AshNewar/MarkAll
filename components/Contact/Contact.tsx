@@ -23,7 +23,7 @@ const Contact = () => {
         message: "",
     })
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         setLoading(true);
         console.log("hell0");
