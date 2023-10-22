@@ -1,0 +1,152 @@
+
+.home{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    font-family: "Poppins","sans-serif";
+    font-weight: bold;
+    gap: 3vw;
+    background-color: var(--prim-bg);
+    color:var(--para-clr);
+    height: 80vh;
+    border-radius: 0 0 0 60px ;
+    align-items: center;
+    /* */
+
+}
+
+.home-title{
+    font-size: 4rem;
+    margin  : 0;
+      
+}
+.home-2-but{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.home-hello{
+    align-items: center;
+    padding:.6rem 1rem;
+    /* background-color: var(--but-clr); */
+    width: 160px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+
+}
+.home-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3vw;
+}
+.home-2-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.home-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-icons{
+    color: var(--title);
+    cursor: pointer;
+}
+.col-but{
+    background-color: var(--but-clr);
+    color: black;
+}
+.tran-but{
+    border: 2px solid white;
+}
+
+
+
+  @media screen and (max-width: 1130px) {
+    .home-title{
+        font-size: 3.4rem; 
+    }
+    .home-subtitle p{
+        font-size: 1.5rem;
+    
+    }
+    .home-hello{
+        font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .home-title{
+        font-size: 2.6rem; 
+    }
+    
+    .home-image{
+        width: 300px;
+        height: 250px;
+    }
+    .home-hello{
+        padding: .8rem 1rem;
+        width: 140px;
+    }
+    li{
+        font-size: .8rem;
+    }
+    
+  }
+
+  @media screen and (max-width:810px){
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        gap: 1.5rem;
+    }
+    .home-2-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .home-2-but{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home-2{
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .home-title{
+        font-size: 2.2rem;
+    }
+    .home-hello{
+        padding: .6rem .8rem;
+        font-size: .8rem;
+        width: 120px;
+    }
+    
+  }
+  @media screen and (max-width:360px) {
+    .home-image{
+        width: 250px;
+        height: 200px;
+    }
+    .home-hello{
+        width: 100px;
+    }
+    
+  }
