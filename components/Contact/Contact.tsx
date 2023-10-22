@@ -26,8 +26,8 @@ const Contact = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         setLoading(true);
-        const emailJsService = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE as string;
-        const emailJSTemplate = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE as string;
+        console.log("hell0");
+        console.log("hello:", process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE)
 
         emailjs.send(
             emailJsService,
