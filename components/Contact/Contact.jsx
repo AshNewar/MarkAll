@@ -23,12 +23,12 @@ const Contact = () => {
         message: "",
     })
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
         console.log("hell0");
-        const emailJsService = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE as string;
-        const emailJSTemplate = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE as string;
+        const emailJsService = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE;
+        const emailJSTemplate = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE;
 
         emailjs.send(
             emailJsService,
@@ -56,7 +56,7 @@ const Contact = () => {
             });
 
     }
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChange = (e) => {
         const { name, value } = e.target;
         setForm({ ...form, [name]: value });
         console.log(form);

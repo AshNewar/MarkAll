@@ -35,7 +35,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "components/Contact/Contact.jsx", "components/Navbar/Navbar.jsx", "components/Features/Features.jsx", "components/Home/Home.jsx", "components/Testomonial/Testomonial.jsx"  ],
   "exclude": [
     "node_modules"
   ]
